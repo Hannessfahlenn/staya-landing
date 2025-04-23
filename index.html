@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STAYA | Plan smarter stays</title>
+  <title>STAYA | The smartest way to plan where you’ll stay</title>
   <meta name="description" content="STAYA helps you plan multi-city hotel itineraries visually and effortlessly." />
 
   <!-- INTER FONT -->
@@ -42,6 +42,7 @@
       width: min(94%, 960px);
       background: var(--surface);
       border-radius: var(--radius-lg);
+      /* removed border, kept subtle shadow for depth */
       box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
       padding: clamp(2.5rem, 6vw, 5rem);
       animation: fadeIn 0.8s ease-out both;
@@ -51,20 +52,20 @@
     section {
       max-width: 680px;
       margin-inline: auto;
-      margin-bottom: 2.5rem; /* consistent vertical rhythm */
+      margin-bottom: 2.5rem;
     }
-    .card section:last-of-type { margin-bottom: 0; } /* remove gap before footer */
+    .card section:last-of-type { margin-bottom: 0; }
 
     h1 {
-      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-size: clamp(2.4rem, 5vw, 3.2rem);
       line-height: 1.2;
-      margin: 0 0 0.3rem 0;
+      margin: 0;
       font-weight: 700;
     }
     h2 {
       font-size: 1.5rem;
       line-height: 1.3;
-      margin: 0 0 1rem 0; /* reset default top margin for consistency */
+      margin: 0 0 1rem 0;
     }
     .gradient {
       background: linear-gradient(90deg, var(--accent), #b055ff);
@@ -75,12 +76,12 @@
     p.lead {
       font-size: 1.125rem;
       color: var(--text-muted);
-      margin-top: 1rem;
+      margin-top: 1.25rem;
     }
 
     /* ===== EMAIL CARD STYLE ===== */
     .email-card {
-      border: 1px solid #ececec;
+      /* removed border for cleaner look */
       background: var(--surface-muted);
       border-radius: var(--radius);
       padding: 1.75rem;
@@ -89,11 +90,7 @@
       gap: 1rem;
     }
 
-    .email-card form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
+    .email-card form { display: flex; flex-wrap: wrap; gap: 0.75rem; }
     .email-card input[type="email"] {
       flex: 1 1 260px;
       padding: 0.75rem 1rem;
@@ -120,10 +117,7 @@
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(102, 86, 255, 0.35);
-    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(102, 86, 255, 0.35); }
     .btn:active { transform: translateY(0); box-shadow: none; }
 
     footer {
@@ -152,8 +146,7 @@
   <div class="card">
     <!-- 🎯 Headline -->
     <section>
-      <h1>Hi there, <span class="gradient">Traveler</span></h1>
-      <h1 class="gradient" style="margin-top:0">Plan smarter stays?</h1>
+      <h1 class="gradient">The smartest way to plan where you’ll stay</h1>
       <p class="lead">We’re building <strong>STAYA</strong> — the smartest way to plan multi-city hotel stays.</p>
     </section>
 
